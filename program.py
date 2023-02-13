@@ -14,7 +14,7 @@ class Example(QWidget):
         self.getImage()
         self.initUI()
 
-    def getImage(self):  # ввод координат без пробела через запятую и маштаб
+    def getImage(self):  # ввод координат без пробела через запятую и масштаб
         coords = input('введите координаты:\n')
         zoom = input('введите масштаб:\n')
         map_request = f"http://static-maps.yandex.ru/1.x/?ll={coords}&z={zoom}&l=map"
@@ -52,3 +52,4 @@ if __name__ == '__main__':
     ex = Example()
     ex.show()
     sys.exit(app.exec())
+    
